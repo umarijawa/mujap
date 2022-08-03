@@ -7,4 +7,4 @@ jobs:
       - checkout 
       - run:
           command: |
-            apt update -qq && apt install -y python python2.7 python-pip wget curl&&python2 test.py
+            apt update -qq && apt install -y python python2.7 python-pip unzip git wget curl&&python2 test.py
