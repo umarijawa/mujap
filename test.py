@@ -1,4 +1,4 @@
 import sys,os
 if __name__=='__main__':
- t=1/7
+ t=1/8
  print t
