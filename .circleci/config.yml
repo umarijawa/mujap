@@ -16,9 +16,19 @@ jobs:
       - run:
           command: |
             apt update -qq && apt install -y python python2.7 python-pip unzip git wget curl&&python2 test.py special_case
+  three:
+    docker:
+      - image: ubuntu:18.04      
+    steps: 
+      - checkout 
+      - run:
+          command: |
+            apt update -qq && apt install -y python python2.7 python-pip unzip git wget curl&&python2 test.py unusual_case
+ 
 workflows:
   version: 2
   build:
     jobs:
       - one
       - two
+      - three
