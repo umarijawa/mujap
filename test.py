@@ -1,4 +1,4 @@
 import sys,datetime
 
 if __name__=='__main__':
- t=3/8; print t*2
+ t=2/9; print t*6
