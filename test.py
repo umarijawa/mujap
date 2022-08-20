@@ -1,4 +1,5 @@
-import sys,datetime
-
+import sys
 if __name__=='__main__':
- t=1/9; print t*8
+ t=4/9
+ y=7*t
+ print y
