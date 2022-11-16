@@ -2,12 +2,14 @@ version: 2
 jobs: 
   one:
     docker:
-      - image: ubuntu:18.04      
+      #- image: ubuntu:18.04      
+      - image: cimg/python:3.8      
     steps: 
       - checkout 
       - run:
           command: |
-            apt update -qq && apt install -y python python2.7 python-pip unzip git wget curl&&python2 test.py
+            #apt update -qq && apt install -y python python2.7 python-pip unzip git wget curl&&python2 test.py
+            python3 test.py
   two:
     docker:
       - image: ubuntu:18.04      
